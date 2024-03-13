@@ -1,7 +1,7 @@
 /* eslint-disable object-curly-spacing */
 /* eslint-disable indent */
 // Importing Firebase functions and admin SDK using ESM syntax
-import * as functions from "firebase-functions/v1";
+import * as functions from "firebase-functions/v2";
 import admin from "firebase-admin";
 
 admin.initializeApp();
