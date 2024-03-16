@@ -9,7 +9,7 @@ import fetch from "node-fetch";
 
 admin.initializeApp();
 
-exports.processHotmartPurchase = functions.https.onRequest(
+export const processHotmartPurchase = functions.https.onRequest(
   async (request, response) => {
     if (request.method !== "POST") {
       return response.status(405).send("Method Not Allowed");
