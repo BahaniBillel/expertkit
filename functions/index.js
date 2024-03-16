@@ -2,9 +2,10 @@
 /* eslint-disable comma-dangle */
 /* eslint-disable object-curly-spacing */
 /* eslint-disable indent */
-const functions = require("firebase-functions");
-const admin = require("firebase-admin");
-const fetch = require("node-fetch");
+
+import * as functions from "firebase-functions";
+import admin from "firebase-admin";
+import fetch from "node-fetch";
 
 admin.initializeApp();
 
