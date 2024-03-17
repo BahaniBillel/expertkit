@@ -8,7 +8,7 @@
 import * as functions from "firebase-functions";
 import admin from "firebase-admin";
 import fetch from "node-fetch"; // Make sure node-fetch is installed
-import generatePassword from "./passwordGenerator"; // Assume you have a password generator function
+
 if (admin.apps.length === 0) {
   admin.initializeApp();
 }
@@ -98,4 +98,14 @@ async function grantCourseAccess(userId, courseId) {
       },
       { merge: true }
     );
+}
+
+function generatePassword(length) {
+  const charset =
+    "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+  let retVal = "";
+  for (let i = 0, n = charset.length; i < length; ++i) {
+    retVal += charset.charAt(Math.floor(Math.random() * n));
+  }
+  return retVal;
 }
