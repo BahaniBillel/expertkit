@@ -1,37 +1,36 @@
 "use client";
 import React, { useState } from "react";
-import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
-import { auth } from "@/firebaseConfig/config";
+import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
 import { useRouter } from "next/navigation";
+import { auth } from "@/app/lib/firebase";
 
-const SignUp = () => {
+const Login = () => {
   // State for email and password
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [createUserWithEmailAndPassword] =
-    useCreateUserWithEmailAndPassword(auth);
-
+  const [signInWithEmailAndPassword] = useSignInWithEmailAndPassword(auth);
   const router = useRouter();
+
   // Handle form submission
   const handleSubmit = async (e) => {
     e.preventDefault(); // Prevent default form submission
     try {
-      const response = await createUserWithEmailAndPassword(email, password);
-      console.log(response);
+      const res = await signInWithEmailAndPassword(email, password);
+      console.log(res);
       sessionStorage.setItem("user", true);
-      setEmail("");
-      setPassword("");
-      router.push("/sign-in");
-    } catch (error) {}
+      router.push("/");
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   return (
-    <div className="bg-gray-900 min-h-screen flex justify-center items-center">
+    <div className="dark:bg-gray-800 min-h-screen flex justify-center items-center">
       <form onSubmit={handleSubmit} className="w-full max-w-sm">
         <div className="mb-6">
           <label
             htmlFor="email"
-            className="block text-white text-sm font-bold mb-2"
+            className="block text-gray-900 text-sm font-bold mb-2"
           >
             Email
           </label>
@@ -47,7 +46,7 @@ const SignUp = () => {
         <div className="mb-6">
           <label
             htmlFor="password"
-            className="block text-white text-sm font-bold mb-2"
+            className="block text-gray-900 text-sm font-bold mb-2"
           >
             Password
           </label>
@@ -65,7 +64,7 @@ const SignUp = () => {
             type="submit"
             className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
           >
-            Sign Up
+            Sign In
           </button>
         </div>
       </form>
@@ -73,4 +72,4 @@ const SignUp = () => {
   );
 };
 
-export default SignUp;
+export default Login;

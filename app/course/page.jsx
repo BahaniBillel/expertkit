@@ -1,5 +1,5 @@
-import Prompt from "@/components/Prompt";
-import Sidear from "@/components/Sidear";
+import Prompt from "../../components/Prompt";
+import Sidear from "../../components/Sidear";
 import React from "react";
 
 const promptsDB = [
