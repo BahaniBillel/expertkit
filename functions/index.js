@@ -46,7 +46,7 @@ export const processHotmartPurchase = functions.https.onRequest(
           .set({
             email: buyer.email,
             name: buyer.name,
-            product: purchase.product.name,
+            product: data.product.name,
             price: purchase.price.value,
             currency: purchase.price.currency_value,
             purchaseDate: admin.firestore.Timestamp.fromMillis(
