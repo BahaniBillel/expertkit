@@ -1,3 +1,5 @@
+/* eslint-disable require-jsdoc */
+/* eslint-disable eol-last */
 /* eslint-disable max-len */
 /* eslint-disable comma-dangle */
 /* eslint-disable object-curly-spacing */
@@ -5,9 +7,11 @@
 
 import * as functions from "firebase-functions";
 import admin from "firebase-admin";
-import fetch from "node-fetch";
-
-admin.initializeApp();
+import fetch from "node-fetch"; // Make sure node-fetch is installed
+import generatePassword from "./passwordGenerator"; // Assume you have a password generator function
+if (admin.apps.length === 0) {
+  admin.initializeApp();
+}
 
 export const processHotmartPurchase = functions.https.onRequest(
   async (request, response) => {
@@ -15,35 +19,83 @@ export const processHotmartPurchase = functions.https.onRequest(
       return response.status(405).send("Method Not Allowed");
     }
 
-    const purchaseData = request.body;
+    const { event, data } = request.body;
 
-    try {
-      // Save data to Firestore
-      const purchaseRef = admin.firestore().collection("purchases").doc();
-      await purchaseRef.set(purchaseData);
+    if (
+      event === "PURCHASE_APPROVED" &&
+      data?.purchase?.status === "APPROVED"
+    ) {
+      const { buyer, purchase } = data;
+      const uniquePassword = generatePassword(12); // Assume generatePassword function exists
 
-      // Send data to external webhook
-      const webhookUrl =
-        "https://services.leadconnectorhq.com/hooks/VemEGyiakDxiuaHVv9er/webhook-trigger/6265d99d-6ca6-4016-becd-e236d77128e3";
-      const webhookResponse = await fetch(webhookUrl, {
-        method: "POST",
-        body: JSON.stringify(purchaseData),
-        headers: { "Content-Type": "application/json" },
-      });
+      try {
+        // Create or update the user in Firebase Authentication
+        const userRecord = await admin.auth().createUser({
+          email: buyer.email,
+          password: uniquePassword,
+          displayName: buyer.name,
+        });
 
-      if (!webhookResponse.ok) {
-        throw new Error(
-          `Failed to send data to webhook. Status: ${webhookResponse.status}`
+        console.log(`User created or updated with UID: ${userRecord.uid}`);
+
+        // Store the purchase details in Firestore
+        await admin
+          .firestore()
+          .collection("purchases")
+          .doc(userRecord.uid)
+          .set({
+            email: buyer.email,
+            name: buyer.name,
+            product: purchase.product.name,
+            price: purchase.price.value,
+            currency: purchase.price.currency_value,
+            purchaseDate: admin.firestore.Timestamp.fromMillis(
+              purchase.approved_date
+            ),
+            courseId: data.product.id, // Assuming this is the course ID
+          });
+
+        // Grant access to the course
+        await grantCourseAccess(userRecord.uid, data.product.id);
+
+        // Optionally, send data to an external webhook, including the unique password
+        const webhookUrl =
+          "https://services.leadconnectorhq.com/hooks/VemEGyiakDxiuaHVv9er/webhook-trigger/6265d99d-6ca6-4016-becd-e236d77128e3";
+        const webhookData = { ...request.body, uniquePassword };
+        const webhookResponse = await fetch(webhookUrl, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(webhookData),
+        });
+
+        if (!webhookResponse.ok) {
+          throw new Error(`Webhook call failed: ${webhookResponse.statusText}`);
+        }
+
+        response.send(
+          "Purchase processed, user account created, and course access granted."
         );
+      } catch (error) {
+        console.error("Error:", error);
+        response.status(500).send("Internal Server Error");
       }
-
-      // Respond to the original request indicating success
-      response.send(
-        "Purchase processed and data sent to webhook successfully."
-      );
-    } catch (error) {
-      console.error("Error processing purchase:", error);
-      response.status(500).send("Internal Server Error");
+    } else {
+      response.send("Purchase not approved, no action taken.");
     }
   }
 );
+
+async function grantCourseAccess(userId, courseId) {
+  // Implement the logic to grant access to the course for the user
+  // For example, update a 'courseAccess' collection with the user ID and course ID
+  await admin
+    .firestore()
+    .collection("marketing_prompts_kit")
+    .doc(userId)
+    .set(
+      {
+        courses: admin.firestore.FieldValue.arrayUnion(courseId),
+      },
+      { merge: true }
+    );
+}
