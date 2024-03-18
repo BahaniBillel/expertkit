@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect } from "react";
 import Image from "next/image";
-import Logo from "../public/images/logo.png";
+import Logo from "../public/images/logo4.png";
 import { IoMdMenu } from "react-icons/io";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "../app/lib/firebase";

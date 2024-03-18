@@ -2,8 +2,9 @@ import React from "react";
 import { getDocs, getDoc, doc } from "firebase/firestore";
 import Prompt from "../../../components/Prompt";
 import { db } from "../../lib/firebase";
+import { usePathname } from "next/navigation";
 
-async function Copywriting() {
+async function Copywriting({ params }) {
   const docRef = doc(db, "marketing_prompts_kit_fr", "FR");
   const docSnap = await getDoc(docRef);
 
@@ -14,6 +15,10 @@ async function Copywriting() {
     console.log("No such document!");
   }
 
+  const pathname = usePathname();
+  const pageUrl = params.name;
+
+  console.log(pathname);
   const { copywriting } = docSnap.data();
   return (
     <div>

@@ -1,23 +1,24 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp, getApps, getApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
+import { getFirestore } from "firebase/firestore";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyB2D7Nigf0PgpFRWpVnmGDNkHZ8DFyEsxM",
-  authDomain: "expertkitauth.firebaseapp.com",
-  projectId: "expertkitauth",
-  storageBucket: "expertkitauth.appspot.com",
-  messagingSenderId: "627496731356",
-  appId: "1:627496731356:web:e1dbb6d52687b7f73fea19",
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTHDOMAIN,
+  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
 };
 
 // Initialize Firebase
 // const app = initializeApp(firebaseConfig);
 const app = !getApps().length ? initializeApp(firebaseConfig) : getApp();
+const db = getFirestore(app);
 
 const auth = getAuth(app);
 
-export { auth, app };
+export { auth, app, db };

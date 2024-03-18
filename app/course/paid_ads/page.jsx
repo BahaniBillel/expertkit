@@ -3,7 +3,7 @@ import { getDocs, getDoc, doc } from "firebase/firestore";
 import Prompt from "../../../components/Prompt";
 import { db } from "../../lib/firebase";
 
-async function Copywriting() {
+async function PaidAds() {
   const docRef = doc(db, "marketing_prompts_kit_fr", "FR");
   const docSnap = await getDoc(docRef);
 
@@ -14,12 +14,12 @@ async function Copywriting() {
     console.log("No such document!");
   }
 
-  const { copywriting } = docSnap.data();
+  const { paid_ads } = docSnap.data();
   return (
     <div>
       <div className="">
         <div>
-          {copywriting.map((el) => {
+          {paid_ads.map((el) => {
             return (
               <div key={el.id}>
                 <Prompt text={el.prompt} />
@@ -32,4 +32,4 @@ async function Copywriting() {
   );
 }
 
-export default Copywriting;
+export default PaidAds;

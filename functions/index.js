@@ -90,7 +90,7 @@ async function grantCourseAccess(userId, courseId) {
   // For example, update a 'courseAccess' collection with the user ID and course ID
   await admin
     .firestore()
-    .collection("marketing_prompts_kit")
+    .collection("marketing_prompts_kit_fr")
     .doc(userId)
     .set(
       {
