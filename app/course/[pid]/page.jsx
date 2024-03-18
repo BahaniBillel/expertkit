@@ -18,7 +18,7 @@ async function Copywriting({ params }) {
   const pathname = usePathname();
   const pageUrl = params.name;
 
-  console.log(pathname);
+  console.log(pathname, pageUrl);
   const { copywriting } = docSnap.data();
   return (
     <div>
