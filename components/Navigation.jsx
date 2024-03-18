@@ -6,7 +6,7 @@ import { IoMdMenu } from "react-icons/io";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "../app/lib/firebase";
 import { useRouter } from "next/navigation";
-import { signOut } from "firebase/auth";
+import { signOutFunction } from "../app/lib/auth";
 import { COURSE, LOGIN_ROUTE } from "../app/lib/routes";
 
 import Link from "next/link";
@@ -19,16 +19,7 @@ function Navigation() {
   };
 
   const [user] = useAuthState(auth);
-  const router = useRouter();
-  // useEffect(() => {
-  //   // This code now runs on client side only
-  //   const userSession = sessionStorage.getItem("user");
-  //   console.log({ user });
 
-  //   if (!user && !userSession) {
-  //     router.push("/sign-in");
-  //   }
-  // }, [user, router]);
   return (
     <div
       className="grid grid-cols-4 md:grid-cols-3 justify-between items-center px-4 md:px-28 py-2  
@@ -62,7 +53,7 @@ function Navigation() {
          px-4 rounded-3xl border border-amber-400 cursor-pointer"
         >
           {user ? (
-            <button onClick={signOut}>Logout</button>
+            <button onClick={signOutFunction}>Logout</button>
           ) : (
             <Link href={LOGIN_ROUTE}>Login</Link>
           )}

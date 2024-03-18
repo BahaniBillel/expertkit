@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
 import { useRouter } from "next/navigation";
-import { auth } from "@/app/lib/firebase";
+import { auth } from "../../app/lib/firebase";
 
 const Login = () => {
   // State for email and password

@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import {
   User as FirebaseUser,
-  signOut as firebaseSignOut,
+  signOut,
   browserLocalPersistence,
   browserSessionPersistence,
   setPersistence,
@@ -24,8 +24,8 @@ export async function signIn(
   return signInWithEmailAndPassword(auth, email, password);
 }
 
-export async function signOut() {
-  return firebaseSignOut(auth);
+export async function signOutFunction() {
+  return signOut(auth);
 }
 
 export function useUser() {

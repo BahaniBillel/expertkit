@@ -2,7 +2,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navigation from "../components/Navigation";
-import { useUser, signOut } from "../app/lib/auth";
+import { useUser, signOutFunction } from "../app/lib/auth";
 
 const inter = Inter({ subsets: ["latin"] });
 

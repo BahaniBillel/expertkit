@@ -21,9 +21,8 @@ const promptsDB = [
 
 function Course() {
   return (
-    <div className="grid grid-cols-6 h-screen pt-[96px] ">
-      <Sidear />
-      <div className="col-span-5 border flex flex-col items-center p-6">
+    <div className=" ">
+      <div className="">
         <div>
           {promptsDB.map((el) => {
             return (
