@@ -31,7 +31,7 @@ export default function Layout({ children }) {
         {/* Toggle Button */}
         <button
           onClick={() => setSidebarOpen(!sidebarOpen)}
-          className={`absolute top-5 -right-12 transform -translate-x-full bg-slate-900 text-amber-500 p-2 
+          className={`absolute top-5 -right-16 transform -translate-x-full bg-slate-900 text-amber-500 p-2 
            focus:outline-none z-10 transition-transform duration-300 ${
              !sidebarOpen && "-translate-x-1/2 z-50 "
            }`}
