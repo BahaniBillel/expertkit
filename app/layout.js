@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navigation from "../components/Navigation";
 import { useUser, signOutFunction } from "../app/lib/auth";
+import { usePathname } from "next/navigation";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,11 +15,13 @@ const metadata = {
 const font = inter.className;
 
 export default function RootLayout({ children }) {
-  const user = useUser();
+  const pathname = usePathname();
+  const findPathname = pathname.includes("/course");
+  console.log("pathname :", pathname, findPathname);
   return (
     <html lang="en">
       <body className={`${font} relative `}>
-        <Navigation />
+        {!findPathname ? <Navigation /> : null}
         {children}
       </body>
     </html>

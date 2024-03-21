@@ -23,7 +23,7 @@ function Navigation() {
   return (
     <div
       className="grid grid-cols-4 md:grid-cols-3 justify-between items-center px-4 md:px-28 py-2  
-   bg-black text-amber-400  min-w-full fixed  "
+   bg-black text-amber-400  min-w-full   "
     >
       <div className="col-span-2 flex flex-row items-center ">
         <Link href="/">
