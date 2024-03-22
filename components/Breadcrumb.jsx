@@ -13,14 +13,19 @@ const Breadcrumb = ({ paths }) => {
         );
 
         return (
-          <React.Fragment key={index}>
+          <React.Fragment
+            key={index}
+            className="flex flex-row justify-center items-center"
+          >
             {index > 0 && <span className="mx-2">/</span>}{" "}
             {/* Add leading slash for items after the first */}
             {isLast ? (
-              <span className="text-gray-500">{decodedName}</span> // Last item, not a link, decoded
+              <span className="text-gray-500 text-sm whitespace-pre">
+                {decodedName}
+              </span> // Last item, not a link, decoded
             ) : (
               <Link href={path.path} passHref>
-                <a className="text-blue-600 hover:text-blue-800">
+                <a className="text-blue-600 hover:text-blue-800 text-sm whitespace-pre">
                   {decodedName}
                 </a>{" "}
                 {/* Decoded path name */}

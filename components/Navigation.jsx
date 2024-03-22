@@ -8,16 +8,13 @@ import { auth } from "../app/lib/firebase";
 import { useRouter } from "next/navigation";
 import { signOutFunction } from "../app/lib/auth";
 import { COURSE, LOGIN_ROUTE } from "../app/lib/routes";
+import { BiSolidLogIn } from "react-icons/bi";
+import { MdSupportAgent } from "react-icons/md";
+import { PiBooks } from "react-icons/pi";
 
 import Link from "next/link";
 
-function Navigation() {
-  const [showsidebar, setShowsidebar] = React.useState(false);
-  const ToggleSidebar = () => {
-    console.log("licked");
-    setShowsidebar(!showsidebar); // Toggle the state
-  };
-
+function Navigation({ ToggleSidebar }) {
   const [user] = useAuthState(auth);
 
   return (
@@ -42,20 +39,32 @@ function Navigation() {
       </div>
       <ul
         className="col-span-2 md:col-span-1 flex flex-row 
-      justify-end items-center space-x-8 "
+      justify-end items-center space-x-5 "
       >
         <Link href={COURSE}>
-          <li>Courses</li>
+          <li>
+            <p className="hidden md:block"> Course</p>
+            <PiBooks className="block md:hidden w-8 h-8" />
+          </li>
         </Link>
-        <li>Support</li>
+        <li>
+          <p className="hidden md:block"> Support</p>
+          <MdSupportAgent className="block md:hidden w-8 h-8" />
+        </li>
         <li
           className=" overflow-hidden py-1
-         px-4 rounded-3xl border border-amber-400 cursor-pointer"
+         px-4 rounded-3xl md:border border-amber-400 cursor-pointer"
         >
           {user ? (
-            <button onClick={signOutFunction}>Logout</button>
+            <button onClick={signOutFunction}>
+              <p className="hidden md:block"> Logout</p>
+              <BiSolidLogIn className="block md:hidden w-8 h-8" />
+            </button>
           ) : (
-            <Link href={LOGIN_ROUTE}>Login</Link>
+            <Link href={LOGIN_ROUTE}>
+              <p className="hidden">Login</p>
+              <BiSolidLogIn className="block md:hidden w-8 h-8" />
+            </Link>
           )}
         </li>
       </ul>

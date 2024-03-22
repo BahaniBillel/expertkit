@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import localDB from "../app/lib/bulkData"; // Adjust the import path as necessary
 
-function Sidebar() {
+function SidebarSM({ isOpen, isClicked }) {
   const [dataKeys, setDataKeys] = useState([]);
 
   useEffect(() => {
@@ -19,14 +19,25 @@ function Sidebar() {
   }, []);
 
   return (
-    <div className="hidden md:flex flex-col h-screen bg-amber-100 overflow-y-auto p-6 ">
+    <div
+      className={`${
+        isOpen === true
+          ? "-translate-x-full ease-in-out transition-all duration-500"
+          : "translate-x-0 ease-in-out transition-all duration-500"
+      } w-96 absolute left-0 top-0 z-50 
+    flex flex-col h-min-max bg-amber-100 overflow-y-auto p-6`}
+    >
       <div>
         {dataKeys.map(({ key, emoji }) => (
           <Link
             key={key}
             href={`/course/${key.toLowerCase().replace(/_/g, "-")}`}
           >
-            <div className="py-4 px-4 rounded-md bg-amber-200 hover:bg-gray-100 my-4 transition-all duration-150 ease-in-out cursor-pointer">
+            <div
+              className="py-4 px-4 rounded-md bg-amber-200
+             hover:bg-gray-100 my-4 transition-all duration-150 ease-in-out cursor-pointer"
+              onClick={isClicked}
+            >
               {emoji}{" "}
               {key
                 .replace(/_/g, " ")
@@ -40,7 +51,7 @@ function Sidebar() {
   );
 }
 
-export default Sidebar;
+export default SidebarSM;
 
 // FIRESTORE LOGIC TO FETCH KEYS FROM COLLECTION
 

@@ -37,7 +37,7 @@ const DynamicRoute = ({ params }) => {
   return (
     <div className="w-full relative">
       <DetailComp emoji={emoji} title={key} />
-      <TransitionGroup className="flex flex-col  items-center">
+      <TransitionGroup className="flex flex-col  items-center px-10">
         {content.length > 0 ? (
           content.map((item) => (
             <CSSTransition key={item.id} timeout={500} classNames="item">
