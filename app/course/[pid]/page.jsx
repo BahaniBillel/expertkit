@@ -1,31 +1,25 @@
 "use client";
+
 import React, { useEffect, useState } from "react";
+import { CSSTransition, TransitionGroup } from "react-transition-group";
 import Prompt from "../../../components/Prompt";
-import LocalDB from "../../lib/bulkData"; // Adjust import path as necessary
+import LocalDB from "../../lib/bulkData";
 import DetailComp from "../../../components/DetailComp";
 
 const DynamicRoute = ({ params }) => {
   const [content, setContent] = useState([]);
-  const [emoji, setEmoji] = useState(""); // State to store the emoji
-  const [key, setKey] = useState(""); // State to store the emoji
+  const [emoji, setEmoji] = useState("");
+  const [key, setKey] = useState("");
 
   useEffect(() => {
-    // Decode the URL parameter to its original form and replace hyphens with underscores
-    // as per your database key naming convention
     const categoryTransformed = decodeURIComponent(params.pid)
       .replace(/-/g, "_")
       .toLowerCase();
-
-    // Attempt to find a matching key in LocalDB that corresponds to the transformed category
     const matchedKey = Object.keys(LocalDB).find(
       (key) => key.toLowerCase() === categoryTransformed
     );
 
-    console.log("Transformed category:", categoryTransformed);
-    console.log("Matched Key:", matchedKey);
-
     if (matchedKey) {
-      // If a match is found, set the content and emoji from the matched data
       const { promptdata, emoji } = LocalDB[matchedKey];
       setContent(promptdata);
       setEmoji(emoji);
@@ -35,22 +29,27 @@ const DynamicRoute = ({ params }) => {
           .replace(/(^|\s)\S/g, (l) => l.toUpperCase())
       );
     } else {
-      // If no match is found, reset the content and emoji states
       setContent([]);
       setEmoji("");
     }
-  }, [params.pid]); // Re-fetch when `params.pid` changes
+  }, [params.pid]);
 
   return (
     <div className="w-full relative">
       <DetailComp emoji={emoji} title={key} />
-      <div className="flex flex-col items-center my-10">
+      <TransitionGroup className="flex flex-col  items-center">
         {content.length > 0 ? (
-          content.map((item) => <Prompt key={item.id} text={item.prompt} />)
+          content.map((item) => (
+            <CSSTransition key={item.id} timeout={500} classNames="item">
+              <Prompt text={item.prompt} />
+            </CSSTransition>
+          ))
         ) : (
-          <p>No content found for this category.</p>
+          <CSSTransition timeout={500} classNames="item">
+            <p>No content found for this category.</p>
+          </CSSTransition>
         )}
-      </div>
+      </TransitionGroup>
     </div>
   );
 };

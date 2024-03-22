@@ -22,18 +22,18 @@ function Sidebar() {
     <div className="hidden md:flex flex-col h-screen bg-amber-100 overflow-y-auto p-6">
       <div>
         {dataKeys.map(({ key, emoji }) => (
-          <div
+          <Link
             key={key}
-            className="py-4 px-4 rounded-md bg-amber-200 hover:bg-gray-100 my-4 transition-all duration-150 ease-in-out cursor-pointer"
+            href={`/course/${key.toLowerCase().replace(/_/g, "-")}`}
           >
-            <Link href={`/course/${key.toLowerCase().replace(/_/g, "-")}`}>
+            <div className="py-4 px-4 rounded-md bg-amber-200 hover:bg-gray-100 my-4 transition-all duration-150 ease-in-out cursor-pointer">
               {emoji}{" "}
               {key
                 .replace(/_/g, " ")
                 // Capitalize each word for better readability
                 .replace(/(^|\s)\S/g, (l) => l.toUpperCase())}
-            </Link>
-          </div>
+            </div>
+          </Link>
         ))}
       </div>
     </div>
