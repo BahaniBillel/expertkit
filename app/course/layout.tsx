@@ -13,17 +13,17 @@ export default function Layout({ children }) {
   const user = useUser();
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const pathname = usePathname();
+  const findPathname = pathname.includes("/course/");
 
   if (user === false) return <>Auth loading...</>;
   if (!user) return <AuthGuard />;
-  const findPathname = pathname.includes("/course/");
 
   return (
-    <div className="flex h-screen w-screen">
+    <div className="flex h-screen w-screen container">
       {/* Sidebar container */}
 
       {!findPathname ? null : (
-        <div className="relative">
+        <div className="relative hidden md:block">
           {/* Sidebar */}
           <div
             className={`transition-width duration-300 overflow-hidden ${

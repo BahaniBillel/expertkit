@@ -18,11 +18,11 @@ function Prompt({ text }) {
     <div>
       {text ? (
         <div
-          className="rounded-md bg-amber-100 max-w-3xl my-5 shadow-md 
+          className="rounded-md bg-amber-100 max-w-2xl max-h-max  my-5 shadow-md 
         flex flex-col overflow-hidden "
         >
           <div className="p-4 ">
-            <p className="text-sm">{text}</p>
+            <p className="text-base">{text}</p>
           </div>
           <div className="text-gray-900 bg-gray-900 justify-self-end ">
             <button onClick={copyText} className=" p-2 text-amber-200">

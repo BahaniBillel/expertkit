@@ -1,8 +1,10 @@
+import localImage from "../../public/images/ferrari.jpg";
 const bulkData = {
   // Your structured data here
 
   génération_leads: {
     emoji: "💸",
+    image: localImage,
     promptdata: [
       {
         prompt:
@@ -16,10 +18,18 @@ const bulkData = {
           "Help me create a Facebook ad that addresses a common [pain point] in my industry and provides a solution that my [service/product] can offer to [target audience].",
         type: "copywriting",
       },
+      {
+        id: "3",
+        prompt: `Best of all, it frees up your time so you can focus on what you do best... so it’s perfect for course creators, coaches, consultants, authors, agencies and ANY business that needs to sell more online.
+
+          And for a limited time only you can grab EVERYTHING you see on this page for the low, low price of just $67.00  $5.60`,
+        type: "copywriting",
+      },
     ],
   },
   engagement_client: {
     emoji: "😃",
+    image: localImage,
     promptdata: [
       {
         prompt:
@@ -37,6 +47,7 @@ const bulkData = {
   },
   entreprise_services: {
     emoji: "👩‍💼",
+    image: localImage,
     promptdata: [
       {
         prompt:
@@ -54,6 +65,7 @@ const bulkData = {
   },
   marketing_influence: {
     emoji: "🥰",
+    image: localImage,
     promptdata: [
       {
         prompt:
@@ -71,6 +83,7 @@ const bulkData = {
   },
   marketing_affiliation: {
     emoji: "👨‍💻",
+    image: localImage,
     promptdata: [
       {
         prompt:
@@ -88,6 +101,7 @@ const bulkData = {
   },
   vidéos_YouTube: {
     emoji: "🎥",
+    image: localImage,
     promptdata: [
       {
         prompt:
@@ -105,6 +119,7 @@ const bulkData = {
   },
   vidéos_TikTok: {
     emoji: "👯",
+    image: localImage,
     promptdata: [
       {
         prompt:
@@ -122,6 +137,7 @@ const bulkData = {
   },
   fils_discussion_Twitter: {
     emoji: "🐣",
+    image: localImage,
     promptdata: [
       {
         prompt:
@@ -139,6 +155,7 @@ const bulkData = {
   },
   histoires_Instagram: {
     emoji: "👍",
+    image: localImage,
     promptdata: [
       {
         prompt:
@@ -156,6 +173,7 @@ const bulkData = {
   },
   publications_LinkedIn: {
     emoji: "🌐",
+    image: localImage,
     promptdata: [
       {
         prompt:
@@ -173,6 +191,7 @@ const bulkData = {
   },
   SEO: {
     emoji: "📈",
+    image: localImage,
     promptdata: [
       {
         prompt:
@@ -190,6 +209,7 @@ const bulkData = {
   },
   messages_démarchage: {
     emoji: "🤝",
+    image: localImage,
     promptdata: [
       {
         prompt:
@@ -207,6 +227,7 @@ const bulkData = {
   },
   campagnes_SMS: {
     emoji: "📲",
+    image: localImage,
     promptdata: [
       {
         prompt:
@@ -224,6 +245,7 @@ const bulkData = {
   },
   service_client: {
     emoji: "☎️",
+    image: localImage,
     promptdata: [
       {
         prompt:
@@ -241,6 +263,7 @@ const bulkData = {
   },
   optimisation_taux_conversion: {
     emoji: "📊",
+    image: localImage,
     promptdata: [
       {
         prompt:
@@ -258,6 +281,7 @@ const bulkData = {
   },
   marketing_contenu: {
     emoji: "💡",
+    image: localImage,
     promptdata: [
       {
         prompt:
@@ -275,6 +299,7 @@ const bulkData = {
   },
   blogging: {
     emoji: "🗒️",
+    image: localImage,
     promptdata: [
       {
         prompt:
@@ -292,6 +317,7 @@ const bulkData = {
   },
   gestion_employés: {
     emoji: "👥",
+    image: localImage,
     promptdata: [
       {
         prompt:
