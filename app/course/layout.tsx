@@ -12,10 +12,10 @@ import { usePathname } from "next/navigation";
 export default function Layout({ children }) {
   const user = useUser();
   const [sidebarOpen, setSidebarOpen] = useState(true);
+  const pathname = usePathname();
 
   if (user === false) return <>Auth loading...</>;
   if (!user) return <AuthGuard />;
-  const pathname = usePathname();
   const findPathname = pathname.includes("/course/");
 
   return (
