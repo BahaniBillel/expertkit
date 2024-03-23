@@ -8,7 +8,7 @@ import { auth } from "../app/lib/firebase";
 import { useRouter } from "next/navigation";
 import { signOutFunction } from "../app/lib/auth";
 import { COURSE, LOGIN_ROUTE } from "../app/lib/routes";
-import { BiSolidLogIn } from "react-icons/bi";
+import { BiSolidLogIn, BiSolidLogOut } from "react-icons/bi";
 import { MdSupportAgent } from "react-icons/md";
 import { PiBooks } from "react-icons/pi";
 
@@ -58,11 +58,11 @@ function Navigation({ ToggleSidebar }) {
           {user ? (
             <button onClick={signOutFunction}>
               <p className="hidden md:block"> Logout</p>
-              <BiSolidLogIn className="block md:hidden w-8 h-8" />
+              <BiSolidLogOut className="block md:hidden w-8 h-8" />
             </button>
           ) : (
             <Link href={LOGIN_ROUTE}>
-              <p className="hidden">Login</p>
+              <p className="hidden md:block">Login</p>
               <BiSolidLogIn className="block md:hidden w-8 h-8" />
             </Link>
           )}

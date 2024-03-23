@@ -7,23 +7,54 @@ const bulkData = {
     image: localImage,
     promptdata: [
       {
-        prompt:
-          "Assist me in crafting a Facebook ad that highlights the key benefits of my [service/product] in a compelling and convincing manner, and appeals to my [target audience].",
-        type: "copywriting",
-        id: "1",
+        pid: "sub1",
+        subTitle: ` Prompts For Creating Product Comparison Tables`,
+        subData: [
+          {
+            prompt:
+              "Assist me in crafting a Facebook ad that highlights the key benefits of my [service/product] in a compelling and convincing manner, and appeals to my [target audience].",
+            type: "copywriting",
+            id: "1",
+          },
+          {
+            id: "2",
+            prompt:
+              "Help me create a Facebook ad that addresses a common [pain point] in my industry and provides a solution that my [service/product] can offer to [target audience].",
+            type: "copywriting",
+          },
+          {
+            id: "3",
+            prompt: `Best of all, it frees up your time so you can focus on what you do best... so it’s perfect for course creators, coaches, consultants, authors, agencies and ANY business that needs to sell more online.
+  
+            And for a limited time only you can grab EVERYTHING you see on this page for the low, low price of just $67.00  $5.60`,
+            type: "copywriting",
+          },
+        ],
       },
       {
-        id: "2",
-        prompt:
-          "Help me create a Facebook ad that addresses a common [pain point] in my industry and provides a solution that my [service/product] can offer to [target audience].",
-        type: "copywriting",
-      },
-      {
-        id: "3",
-        prompt: `Best of all, it frees up your time so you can focus on what you do best... so it’s perfect for course creators, coaches, consultants, authors, agencies and ANY business that needs to sell more online.
-
-          And for a limited time only you can grab EVERYTHING you see on this page for the low, low price of just $67.00  $5.60`,
-        type: "copywriting",
+        pid: "sub2",
+        subTitle: ` Prompts For Creating Product Comparison Tables`,
+        subData: [
+          {
+            prompt:
+              "Assist me in crafting a Facebook ad that highlights the key benefits of my [service/product] in a compelling and convincing manner, and appeals to my [target audience].",
+            type: "copywriting",
+            id: "4",
+          },
+          {
+            id: "5",
+            prompt:
+              "Help me create a Facebook ad that addresses a common [pain point] in my industry and provides a solution that my [service/product] can offer to [target audience].",
+            type: "copywriting",
+          },
+          {
+            id: "6",
+            prompt: `Best of all, it frees up your time so you can focus on what you do best... so it’s perfect for course creators, coaches, consultants, authors, agencies and ANY business that needs to sell more online.
+  
+            And for a limited time only you can grab EVERYTHING you see on this page for the low, low price of just $67.00  $5.60`,
+            type: "copywriting",
+          },
+        ],
       },
     ],
   },
@@ -32,16 +63,54 @@ const bulkData = {
     image: localImage,
     promptdata: [
       {
-        prompt:
-          "Assist me in crafting a Facebook ad that highlights the key benefits of my [service/product] in a compelling and convincing manner, and appeals to my [target audience].",
-        type: "copywriting",
-        id: "1",
+        pid: "sub1",
+        subTitle: ` Prompts For Creating Product Comparison Tables`,
+        subData: [
+          {
+            prompt:
+              "Assist me in crafting a Facebook ad that highlights the key benefits of my [service/product] in a compelling and convincing manner, and appeals to my [target audience].",
+            type: "copywriting",
+            id: "1",
+          },
+          {
+            id: "2",
+            prompt:
+              "Help me create a Facebook ad that addresses a common [pain point] in my industry and provides a solution that my [service/product] can offer to [target audience].",
+            type: "copywriting",
+          },
+          {
+            id: "3",
+            prompt: `Best of all, it frees up your time so you can focus on what you do best... so it’s perfect for course creators, coaches, consultants, authors, agencies and ANY business that needs to sell more online.
+  
+            And for a limited time only you can grab EVERYTHING you see on this page for the low, low price of just $67.00  $5.60`,
+            type: "copywriting",
+          },
+        ],
       },
       {
-        id: "2",
-        prompt:
-          "Help me create a Facebook ad that addresses a common [pain point] in my industry and provides a solution that my [service/product] can offer to [target audience].",
-        type: "copywriting",
+        pid: "sub2",
+        subTitle: ` Prompts For Creating Product Comparison Tables`,
+        subData: [
+          {
+            prompt:
+              "Assist me in crafting a Facebook ad that highlights the key benefits of my [service/product] in a compelling and convincing manner, and appeals to my [target audience].",
+            type: "copywriting",
+            id: "4",
+          },
+          {
+            id: "5",
+            prompt:
+              "Help me create a Facebook ad that addresses a common [pain point] in my industry and provides a solution that my [service/product] can offer to [target audience].",
+            type: "copywriting",
+          },
+          {
+            id: "6",
+            prompt: `Best of all, it frees up your time so you can focus on what you do best... so it’s perfect for course creators, coaches, consultants, authors, agencies and ANY business that needs to sell more online.
+  
+            And for a limited time only you can grab EVERYTHING you see on this page for the low, low price of just $67.00  $5.60`,
+            type: "copywriting",
+          },
+        ],
       },
     ],
   },
@@ -50,16 +119,54 @@ const bulkData = {
     image: localImage,
     promptdata: [
       {
-        prompt:
-          "Assist me in crafting a Facebook ad that highlights the key benefits of my [service/product] in a compelling and convincing manner, and appeals to my [target audience].",
-        type: "copywriting",
-        id: "1",
+        pid: "sub1",
+        subTitle: ` Prompts For Creating Product Comparison Tables`,
+        subData: [
+          {
+            prompt:
+              "Assist me in crafting a Facebook ad that highlights the key benefits of my [service/product] in a compelling and convincing manner, and appeals to my [target audience].",
+            type: "copywriting",
+            id: "1",
+          },
+          {
+            id: "2",
+            prompt:
+              "Help me create a Facebook ad that addresses a common [pain point] in my industry and provides a solution that my [service/product] can offer to [target audience].",
+            type: "copywriting",
+          },
+          {
+            id: "3",
+            prompt: `Best of all, it frees up your time so you can focus on what you do best... so it’s perfect for course creators, coaches, consultants, authors, agencies and ANY business that needs to sell more online.
+  
+            And for a limited time only you can grab EVERYTHING you see on this page for the low, low price of just $67.00  $5.60`,
+            type: "copywriting",
+          },
+        ],
       },
       {
-        id: "2",
-        prompt:
-          "Help me create a Facebook ad that addresses a common [pain point] in my industry and provides a solution that my [service/product] can offer to [target audience].",
-        type: "copywriting",
+        pid: "sub2",
+        subTitle: ` Prompts For Creating Product Comparison Tables`,
+        subData: [
+          {
+            prompt:
+              "Assist me in crafting a Facebook ad that highlights the key benefits of my [service/product] in a compelling and convincing manner, and appeals to my [target audience].",
+            type: "copywriting",
+            id: "4",
+          },
+          {
+            id: "5",
+            prompt:
+              "Help me create a Facebook ad that addresses a common [pain point] in my industry and provides a solution that my [service/product] can offer to [target audience].",
+            type: "copywriting",
+          },
+          {
+            id: "6",
+            prompt: `Best of all, it frees up your time so you can focus on what you do best... so it’s perfect for course creators, coaches, consultants, authors, agencies and ANY business that needs to sell more online.
+  
+            And for a limited time only you can grab EVERYTHING you see on this page for the low, low price of just $67.00  $5.60`,
+            type: "copywriting",
+          },
+        ],
       },
     ],
   },
@@ -68,16 +175,54 @@ const bulkData = {
     image: localImage,
     promptdata: [
       {
-        prompt:
-          "Assist me in crafting a Facebook ad that highlights the key benefits of my [service/product] in a compelling and convincing manner, and appeals to my [target audience].",
-        type: "copywriting",
-        id: "1",
+        pid: "sub1",
+        subTitle: ` Prompts For Creating Product Comparison Tables`,
+        subData: [
+          {
+            prompt:
+              "Assist me in crafting a Facebook ad that highlights the key benefits of my [service/product] in a compelling and convincing manner, and appeals to my [target audience].",
+            type: "copywriting",
+            id: "1",
+          },
+          {
+            id: "2",
+            prompt:
+              "Help me create a Facebook ad that addresses a common [pain point] in my industry and provides a solution that my [service/product] can offer to [target audience].",
+            type: "copywriting",
+          },
+          {
+            id: "3",
+            prompt: `Best of all, it frees up your time so you can focus on what you do best... so it’s perfect for course creators, coaches, consultants, authors, agencies and ANY business that needs to sell more online.
+  
+            And for a limited time only you can grab EVERYTHING you see on this page for the low, low price of just $67.00  $5.60`,
+            type: "copywriting",
+          },
+        ],
       },
       {
-        id: "2",
-        prompt:
-          "Help me create a Facebook ad that addresses a common [pain point] in my industry and provides a solution that my [service/product] can offer to [target audience].",
-        type: "copywriting",
+        pid: "sub2",
+        subTitle: ` Prompts For Creating Product Comparison Tables`,
+        subData: [
+          {
+            prompt:
+              "Assist me in crafting a Facebook ad that highlights the key benefits of my [service/product] in a compelling and convincing manner, and appeals to my [target audience].",
+            type: "copywriting",
+            id: "4",
+          },
+          {
+            id: "5",
+            prompt:
+              "Help me create a Facebook ad that addresses a common [pain point] in my industry and provides a solution that my [service/product] can offer to [target audience].",
+            type: "copywriting",
+          },
+          {
+            id: "6",
+            prompt: `Best of all, it frees up your time so you can focus on what you do best... so it’s perfect for course creators, coaches, consultants, authors, agencies and ANY business that needs to sell more online.
+  
+            And for a limited time only you can grab EVERYTHING you see on this page for the low, low price of just $67.00  $5.60`,
+            type: "copywriting",
+          },
+        ],
       },
     ],
   },
@@ -86,16 +231,54 @@ const bulkData = {
     image: localImage,
     promptdata: [
       {
-        prompt:
-          "Assist me in crafting a Facebook ad that highlights the key benefits of my [service/product] in a compelling and convincing manner, and appeals to my [target audience].",
-        type: "copywriting",
-        id: "1",
+        pid: "sub1",
+        subTitle: ` Prompts For Creating Product Comparison Tables`,
+        subData: [
+          {
+            prompt:
+              "Assist me in crafting a Facebook ad that highlights the key benefits of my [service/product] in a compelling and convincing manner, and appeals to my [target audience].",
+            type: "copywriting",
+            id: "1",
+          },
+          {
+            id: "2",
+            prompt:
+              "Help me create a Facebook ad that addresses a common [pain point] in my industry and provides a solution that my [service/product] can offer to [target audience].",
+            type: "copywriting",
+          },
+          {
+            id: "3",
+            prompt: `Best of all, it frees up your time so you can focus on what you do best... so it’s perfect for course creators, coaches, consultants, authors, agencies and ANY business that needs to sell more online.
+  
+            And for a limited time only you can grab EVERYTHING you see on this page for the low, low price of just $67.00  $5.60`,
+            type: "copywriting",
+          },
+        ],
       },
       {
-        id: "2",
-        prompt:
-          "Help me create a Facebook ad that addresses a common [pain point] in my industry and provides a solution that my [service/product] can offer to [target audience].",
-        type: "copywriting",
+        pid: "sub2",
+        subTitle: ` Prompts For Creating Product Comparison Tables`,
+        subData: [
+          {
+            prompt:
+              "Assist me in crafting a Facebook ad that highlights the key benefits of my [service/product] in a compelling and convincing manner, and appeals to my [target audience].",
+            type: "copywriting",
+            id: "4",
+          },
+          {
+            id: "5",
+            prompt:
+              "Help me create a Facebook ad that addresses a common [pain point] in my industry and provides a solution that my [service/product] can offer to [target audience].",
+            type: "copywriting",
+          },
+          {
+            id: "6",
+            prompt: `Best of all, it frees up your time so you can focus on what you do best... so it’s perfect for course creators, coaches, consultants, authors, agencies and ANY business that needs to sell more online.
+  
+            And for a limited time only you can grab EVERYTHING you see on this page for the low, low price of just $67.00  $5.60`,
+            type: "copywriting",
+          },
+        ],
       },
     ],
   },
@@ -104,16 +287,54 @@ const bulkData = {
     image: localImage,
     promptdata: [
       {
-        prompt:
-          "Assist me in crafting a Facebook ad that highlights the key benefits of my [service/product] in a compelling and convincing manner, and appeals to my [target audience].",
-        type: "copywriting",
-        id: "1",
+        pid: "sub1",
+        subTitle: ` Prompts For Creating Product Comparison Tables`,
+        subData: [
+          {
+            prompt:
+              "Assist me in crafting a Facebook ad that highlights the key benefits of my [service/product] in a compelling and convincing manner, and appeals to my [target audience].",
+            type: "copywriting",
+            id: "1",
+          },
+          {
+            id: "2",
+            prompt:
+              "Help me create a Facebook ad that addresses a common [pain point] in my industry and provides a solution that my [service/product] can offer to [target audience].",
+            type: "copywriting",
+          },
+          {
+            id: "3",
+            prompt: `Best of all, it frees up your time so you can focus on what you do best... so it’s perfect for course creators, coaches, consultants, authors, agencies and ANY business that needs to sell more online.
+  
+            And for a limited time only you can grab EVERYTHING you see on this page for the low, low price of just $67.00  $5.60`,
+            type: "copywriting",
+          },
+        ],
       },
       {
-        id: "2",
-        prompt:
-          "Help me create a Facebook ad that addresses a common [pain point] in my industry and provides a solution that my [service/product] can offer to [target audience].",
-        type: "copywriting",
+        pid: "sub2",
+        subTitle: ` Prompts For Creating Product Comparison Tables`,
+        subData: [
+          {
+            prompt:
+              "Assist me in crafting a Facebook ad that highlights the key benefits of my [service/product] in a compelling and convincing manner, and appeals to my [target audience].",
+            type: "copywriting",
+            id: "4",
+          },
+          {
+            id: "5",
+            prompt:
+              "Help me create a Facebook ad that addresses a common [pain point] in my industry and provides a solution that my [service/product] can offer to [target audience].",
+            type: "copywriting",
+          },
+          {
+            id: "6",
+            prompt: `Best of all, it frees up your time so you can focus on what you do best... so it’s perfect for course creators, coaches, consultants, authors, agencies and ANY business that needs to sell more online.
+  
+            And for a limited time only you can grab EVERYTHING you see on this page for the low, low price of just $67.00  $5.60`,
+            type: "copywriting",
+          },
+        ],
       },
     ],
   },
@@ -122,16 +343,54 @@ const bulkData = {
     image: localImage,
     promptdata: [
       {
-        prompt:
-          "Assist me in crafting a Facebook ad that highlights the key benefits of my [service/product] in a compelling and convincing manner, and appeals to my [target audience].",
-        type: "copywriting",
-        id: "1",
+        pid: "sub1",
+        subTitle: ` Prompts For Creating Product Comparison Tables`,
+        subData: [
+          {
+            prompt:
+              "Assist me in crafting a Facebook ad that highlights the key benefits of my [service/product] in a compelling and convincing manner, and appeals to my [target audience].",
+            type: "copywriting",
+            id: "1",
+          },
+          {
+            id: "2",
+            prompt:
+              "Help me create a Facebook ad that addresses a common [pain point] in my industry and provides a solution that my [service/product] can offer to [target audience].",
+            type: "copywriting",
+          },
+          {
+            id: "3",
+            prompt: `Best of all, it frees up your time so you can focus on what you do best... so it’s perfect for course creators, coaches, consultants, authors, agencies and ANY business that needs to sell more online.
+  
+            And for a limited time only you can grab EVERYTHING you see on this page for the low, low price of just $67.00  $5.60`,
+            type: "copywriting",
+          },
+        ],
       },
       {
-        id: "2",
-        prompt:
-          "Help me create a Facebook ad that addresses a common [pain point] in my industry and provides a solution that my [service/product] can offer to [target audience].",
-        type: "copywriting",
+        pid: "sub2",
+        subTitle: ` Prompts For Creating Product Comparison Tables`,
+        subData: [
+          {
+            prompt:
+              "Assist me in crafting a Facebook ad that highlights the key benefits of my [service/product] in a compelling and convincing manner, and appeals to my [target audience].",
+            type: "copywriting",
+            id: "4",
+          },
+          {
+            id: "5",
+            prompt:
+              "Help me create a Facebook ad that addresses a common [pain point] in my industry and provides a solution that my [service/product] can offer to [target audience].",
+            type: "copywriting",
+          },
+          {
+            id: "6",
+            prompt: `Best of all, it frees up your time so you can focus on what you do best... so it’s perfect for course creators, coaches, consultants, authors, agencies and ANY business that needs to sell more online.
+  
+            And for a limited time only you can grab EVERYTHING you see on this page for the low, low price of just $67.00  $5.60`,
+            type: "copywriting",
+          },
+        ],
       },
     ],
   },
@@ -140,16 +399,54 @@ const bulkData = {
     image: localImage,
     promptdata: [
       {
-        prompt:
-          "Assist me in crafting a Facebook ad that highlights the key benefits of my [service/product] in a compelling and convincing manner, and appeals to my [target audience].",
-        type: "copywriting",
-        id: "1",
+        pid: "sub1",
+        subTitle: ` Prompts For Creating Product Comparison Tables`,
+        subData: [
+          {
+            prompt:
+              "Assist me in crafting a Facebook ad that highlights the key benefits of my [service/product] in a compelling and convincing manner, and appeals to my [target audience].",
+            type: "copywriting",
+            id: "1",
+          },
+          {
+            id: "2",
+            prompt:
+              "Help me create a Facebook ad that addresses a common [pain point] in my industry and provides a solution that my [service/product] can offer to [target audience].",
+            type: "copywriting",
+          },
+          {
+            id: "3",
+            prompt: `Best of all, it frees up your time so you can focus on what you do best... so it’s perfect for course creators, coaches, consultants, authors, agencies and ANY business that needs to sell more online.
+  
+            And for a limited time only you can grab EVERYTHING you see on this page for the low, low price of just $67.00  $5.60`,
+            type: "copywriting",
+          },
+        ],
       },
       {
-        id: "2",
-        prompt:
-          "Help me create a Facebook ad that addresses a common [pain point] in my industry and provides a solution that my [service/product] can offer to [target audience].",
-        type: "copywriting",
+        pid: "sub2",
+        subTitle: ` Prompts For Creating Product Comparison Tables`,
+        subData: [
+          {
+            prompt:
+              "Assist me in crafting a Facebook ad that highlights the key benefits of my [service/product] in a compelling and convincing manner, and appeals to my [target audience].",
+            type: "copywriting",
+            id: "4",
+          },
+          {
+            id: "5",
+            prompt:
+              "Help me create a Facebook ad that addresses a common [pain point] in my industry and provides a solution that my [service/product] can offer to [target audience].",
+            type: "copywriting",
+          },
+          {
+            id: "6",
+            prompt: `Best of all, it frees up your time so you can focus on what you do best... so it’s perfect for course creators, coaches, consultants, authors, agencies and ANY business that needs to sell more online.
+  
+            And for a limited time only you can grab EVERYTHING you see on this page for the low, low price of just $67.00  $5.60`,
+            type: "copywriting",
+          },
+        ],
       },
     ],
   },
@@ -158,16 +455,54 @@ const bulkData = {
     image: localImage,
     promptdata: [
       {
-        prompt:
-          "Assist me in crafting a Facebook ad that highlights the key benefits of my [service/product] in a compelling and convincing manner, and appeals to my [target audience].",
-        type: "copywriting",
-        id: "1",
+        pid: "sub1",
+        subTitle: ` Prompts For Creating Product Comparison Tables`,
+        subData: [
+          {
+            prompt:
+              "Assist me in crafting a Facebook ad that highlights the key benefits of my [service/product] in a compelling and convincing manner, and appeals to my [target audience].",
+            type: "copywriting",
+            id: "1",
+          },
+          {
+            id: "2",
+            prompt:
+              "Help me create a Facebook ad that addresses a common [pain point] in my industry and provides a solution that my [service/product] can offer to [target audience].",
+            type: "copywriting",
+          },
+          {
+            id: "3",
+            prompt: `Best of all, it frees up your time so you can focus on what you do best... so it’s perfect for course creators, coaches, consultants, authors, agencies and ANY business that needs to sell more online.
+  
+            And for a limited time only you can grab EVERYTHING you see on this page for the low, low price of just $67.00  $5.60`,
+            type: "copywriting",
+          },
+        ],
       },
       {
-        id: "2",
-        prompt:
-          "Help me create a Facebook ad that addresses a common [pain point] in my industry and provides a solution that my [service/product] can offer to [target audience].",
-        type: "copywriting",
+        pid: "sub2",
+        subTitle: ` Prompts For Creating Product Comparison Tables`,
+        subData: [
+          {
+            prompt:
+              "Assist me in crafting a Facebook ad that highlights the key benefits of my [service/product] in a compelling and convincing manner, and appeals to my [target audience].",
+            type: "copywriting",
+            id: "4",
+          },
+          {
+            id: "5",
+            prompt:
+              "Help me create a Facebook ad that addresses a common [pain point] in my industry and provides a solution that my [service/product] can offer to [target audience].",
+            type: "copywriting",
+          },
+          {
+            id: "6",
+            prompt: `Best of all, it frees up your time so you can focus on what you do best... so it’s perfect for course creators, coaches, consultants, authors, agencies and ANY business that needs to sell more online.
+  
+            And for a limited time only you can grab EVERYTHING you see on this page for the low, low price of just $67.00  $5.60`,
+            type: "copywriting",
+          },
+        ],
       },
     ],
   },
@@ -176,16 +511,54 @@ const bulkData = {
     image: localImage,
     promptdata: [
       {
-        prompt:
-          "Assist me in crafting a Facebook ad that highlights the key benefits of my [service/product] in a compelling and convincing manner, and appeals to my [target audience].",
-        type: "copywriting",
-        id: "1",
+        pid: "sub1",
+        subTitle: ` Prompts For Creating Product Comparison Tables`,
+        subData: [
+          {
+            prompt:
+              "Assist me in crafting a Facebook ad that highlights the key benefits of my [service/product] in a compelling and convincing manner, and appeals to my [target audience].",
+            type: "copywriting",
+            id: "1",
+          },
+          {
+            id: "2",
+            prompt:
+              "Help me create a Facebook ad that addresses a common [pain point] in my industry and provides a solution that my [service/product] can offer to [target audience].",
+            type: "copywriting",
+          },
+          {
+            id: "3",
+            prompt: `Best of all, it frees up your time so you can focus on what you do best... so it’s perfect for course creators, coaches, consultants, authors, agencies and ANY business that needs to sell more online.
+  
+            And for a limited time only you can grab EVERYTHING you see on this page for the low, low price of just $67.00  $5.60`,
+            type: "copywriting",
+          },
+        ],
       },
       {
-        id: "2",
-        prompt:
-          "Help me create a Facebook ad that addresses a common [pain point] in my industry and provides a solution that my [service/product] can offer to [target audience].",
-        type: "copywriting",
+        pid: "sub2",
+        subTitle: ` Prompts For Creating Product Comparison Tables`,
+        subData: [
+          {
+            prompt:
+              "Assist me in crafting a Facebook ad that highlights the key benefits of my [service/product] in a compelling and convincing manner, and appeals to my [target audience].",
+            type: "copywriting",
+            id: "4",
+          },
+          {
+            id: "5",
+            prompt:
+              "Help me create a Facebook ad that addresses a common [pain point] in my industry and provides a solution that my [service/product] can offer to [target audience].",
+            type: "copywriting",
+          },
+          {
+            id: "6",
+            prompt: `Best of all, it frees up your time so you can focus on what you do best... so it’s perfect for course creators, coaches, consultants, authors, agencies and ANY business that needs to sell more online.
+  
+            And for a limited time only you can grab EVERYTHING you see on this page for the low, low price of just $67.00  $5.60`,
+            type: "copywriting",
+          },
+        ],
       },
     ],
   },
@@ -194,16 +567,54 @@ const bulkData = {
     image: localImage,
     promptdata: [
       {
-        prompt:
-          "Assist me in crafting a Facebook ad that highlights the key benefits of my [service/product] in a compelling and convincing manner, and appeals to my [target audience].",
-        type: "copywriting",
-        id: "1",
+        pid: "sub1",
+        subTitle: ` Prompts For Creating Product Comparison Tables`,
+        subData: [
+          {
+            prompt:
+              "Assist me in crafting a Facebook ad that highlights the key benefits of my [service/product] in a compelling and convincing manner, and appeals to my [target audience].",
+            type: "copywriting",
+            id: "1",
+          },
+          {
+            id: "2",
+            prompt:
+              "Help me create a Facebook ad that addresses a common [pain point] in my industry and provides a solution that my [service/product] can offer to [target audience].",
+            type: "copywriting",
+          },
+          {
+            id: "3",
+            prompt: `Best of all, it frees up your time so you can focus on what you do best... so it’s perfect for course creators, coaches, consultants, authors, agencies and ANY business that needs to sell more online.
+  
+            And for a limited time only you can grab EVERYTHING you see on this page for the low, low price of just $67.00  $5.60`,
+            type: "copywriting",
+          },
+        ],
       },
       {
-        id: "2",
-        prompt:
-          "Help me create a Facebook ad that addresses a common [pain point] in my industry and provides a solution that my [service/product] can offer to [target audience].",
-        type: "copywriting",
+        pid: "sub2",
+        subTitle: ` Prompts For Creating Product Comparison Tables`,
+        subData: [
+          {
+            prompt:
+              "Assist me in crafting a Facebook ad that highlights the key benefits of my [service/product] in a compelling and convincing manner, and appeals to my [target audience].",
+            type: "copywriting",
+            id: "4",
+          },
+          {
+            id: "5",
+            prompt:
+              "Help me create a Facebook ad that addresses a common [pain point] in my industry and provides a solution that my [service/product] can offer to [target audience].",
+            type: "copywriting",
+          },
+          {
+            id: "6",
+            prompt: `Best of all, it frees up your time so you can focus on what you do best... so it’s perfect for course creators, coaches, consultants, authors, agencies and ANY business that needs to sell more online.
+  
+            And for a limited time only you can grab EVERYTHING you see on this page for the low, low price of just $67.00  $5.60`,
+            type: "copywriting",
+          },
+        ],
       },
     ],
   },
@@ -212,16 +623,54 @@ const bulkData = {
     image: localImage,
     promptdata: [
       {
-        prompt:
-          "Assist me in crafting a Facebook ad that highlights the key benefits of my [service/product] in a compelling and convincing manner, and appeals to my [target audience].",
-        type: "copywriting",
-        id: "1",
+        pid: "sub1",
+        subTitle: ` Prompts For Creating Product Comparison Tables`,
+        subData: [
+          {
+            prompt:
+              "Assist me in crafting a Facebook ad that highlights the key benefits of my [service/product] in a compelling and convincing manner, and appeals to my [target audience].",
+            type: "copywriting",
+            id: "1",
+          },
+          {
+            id: "2",
+            prompt:
+              "Help me create a Facebook ad that addresses a common [pain point] in my industry and provides a solution that my [service/product] can offer to [target audience].",
+            type: "copywriting",
+          },
+          {
+            id: "3",
+            prompt: `Best of all, it frees up your time so you can focus on what you do best... so it’s perfect for course creators, coaches, consultants, authors, agencies and ANY business that needs to sell more online.
+  
+            And for a limited time only you can grab EVERYTHING you see on this page for the low, low price of just $67.00  $5.60`,
+            type: "copywriting",
+          },
+        ],
       },
       {
-        id: "2",
-        prompt:
-          "Help me create a Facebook ad that addresses a common [pain point] in my industry and provides a solution that my [service/product] can offer to [target audience].",
-        type: "copywriting",
+        pid: "sub2",
+        subTitle: ` Prompts For Creating Product Comparison Tables`,
+        subData: [
+          {
+            prompt:
+              "Assist me in crafting a Facebook ad that highlights the key benefits of my [service/product] in a compelling and convincing manner, and appeals to my [target audience].",
+            type: "copywriting",
+            id: "4",
+          },
+          {
+            id: "5",
+            prompt:
+              "Help me create a Facebook ad that addresses a common [pain point] in my industry and provides a solution that my [service/product] can offer to [target audience].",
+            type: "copywriting",
+          },
+          {
+            id: "6",
+            prompt: `Best of all, it frees up your time so you can focus on what you do best... so it’s perfect for course creators, coaches, consultants, authors, agencies and ANY business that needs to sell more online.
+  
+            And for a limited time only you can grab EVERYTHING you see on this page for the low, low price of just $67.00  $5.60`,
+            type: "copywriting",
+          },
+        ],
       },
     ],
   },
@@ -230,16 +679,54 @@ const bulkData = {
     image: localImage,
     promptdata: [
       {
-        prompt:
-          "Assist me in crafting a Facebook ad that highlights the key benefits of my [service/product] in a compelling and convincing manner, and appeals to my [target audience].",
-        type: "copywriting",
-        id: "1",
+        pid: "sub1",
+        subTitle: ` Prompts For Creating Product Comparison Tables`,
+        subData: [
+          {
+            prompt:
+              "Assist me in crafting a Facebook ad that highlights the key benefits of my [service/product] in a compelling and convincing manner, and appeals to my [target audience].",
+            type: "copywriting",
+            id: "1",
+          },
+          {
+            id: "2",
+            prompt:
+              "Help me create a Facebook ad that addresses a common [pain point] in my industry and provides a solution that my [service/product] can offer to [target audience].",
+            type: "copywriting",
+          },
+          {
+            id: "3",
+            prompt: `Best of all, it frees up your time so you can focus on what you do best... so it’s perfect for course creators, coaches, consultants, authors, agencies and ANY business that needs to sell more online.
+  
+            And for a limited time only you can grab EVERYTHING you see on this page for the low, low price of just $67.00  $5.60`,
+            type: "copywriting",
+          },
+        ],
       },
       {
-        id: "2",
-        prompt:
-          "Help me create a Facebook ad that addresses a common [pain point] in my industry and provides a solution that my [service/product] can offer to [target audience].",
-        type: "copywriting",
+        pid: "sub2",
+        subTitle: ` Prompts For Creating Product Comparison Tables`,
+        subData: [
+          {
+            prompt:
+              "Assist me in crafting a Facebook ad that highlights the key benefits of my [service/product] in a compelling and convincing manner, and appeals to my [target audience].",
+            type: "copywriting",
+            id: "4",
+          },
+          {
+            id: "5",
+            prompt:
+              "Help me create a Facebook ad that addresses a common [pain point] in my industry and provides a solution that my [service/product] can offer to [target audience].",
+            type: "copywriting",
+          },
+          {
+            id: "6",
+            prompt: `Best of all, it frees up your time so you can focus on what you do best... so it’s perfect for course creators, coaches, consultants, authors, agencies and ANY business that needs to sell more online.
+  
+            And for a limited time only you can grab EVERYTHING you see on this page for the low, low price of just $67.00  $5.60`,
+            type: "copywriting",
+          },
+        ],
       },
     ],
   },
@@ -248,16 +735,54 @@ const bulkData = {
     image: localImage,
     promptdata: [
       {
-        prompt:
-          "Assist me in crafting a Facebook ad that highlights the key benefits of my [service/product] in a compelling and convincing manner, and appeals to my [target audience].",
-        type: "copywriting",
-        id: "1",
+        pid: "sub1",
+        subTitle: ` Prompts For Creating Product Comparison Tables`,
+        subData: [
+          {
+            prompt:
+              "Assist me in crafting a Facebook ad that highlights the key benefits of my [service/product] in a compelling and convincing manner, and appeals to my [target audience].",
+            type: "copywriting",
+            id: "1",
+          },
+          {
+            id: "2",
+            prompt:
+              "Help me create a Facebook ad that addresses a common [pain point] in my industry and provides a solution that my [service/product] can offer to [target audience].",
+            type: "copywriting",
+          },
+          {
+            id: "3",
+            prompt: `Best of all, it frees up your time so you can focus on what you do best... so it’s perfect for course creators, coaches, consultants, authors, agencies and ANY business that needs to sell more online.
+  
+            And for a limited time only you can grab EVERYTHING you see on this page for the low, low price of just $67.00  $5.60`,
+            type: "copywriting",
+          },
+        ],
       },
       {
-        id: "2",
-        prompt:
-          "Help me create a Facebook ad that addresses a common [pain point] in my industry and provides a solution that my [service/product] can offer to [target audience].",
-        type: "copywriting",
+        pid: "sub2",
+        subTitle: ` Prompts For Creating Product Comparison Tables`,
+        subData: [
+          {
+            prompt:
+              "Assist me in crafting a Facebook ad that highlights the key benefits of my [service/product] in a compelling and convincing manner, and appeals to my [target audience].",
+            type: "copywriting",
+            id: "4",
+          },
+          {
+            id: "5",
+            prompt:
+              "Help me create a Facebook ad that addresses a common [pain point] in my industry and provides a solution that my [service/product] can offer to [target audience].",
+            type: "copywriting",
+          },
+          {
+            id: "6",
+            prompt: `Best of all, it frees up your time so you can focus on what you do best... so it’s perfect for course creators, coaches, consultants, authors, agencies and ANY business that needs to sell more online.
+  
+            And for a limited time only you can grab EVERYTHING you see on this page for the low, low price of just $67.00  $5.60`,
+            type: "copywriting",
+          },
+        ],
       },
     ],
   },
@@ -266,16 +791,54 @@ const bulkData = {
     image: localImage,
     promptdata: [
       {
-        prompt:
-          "Assist me in crafting a Facebook ad that highlights the key benefits of my [service/product] in a compelling and convincing manner, and appeals to my [target audience].",
-        type: "copywriting",
-        id: "1",
+        pid: "sub1",
+        subTitle: ` Prompts For Creating Product Comparison Tables`,
+        subData: [
+          {
+            prompt:
+              "Assist me in crafting a Facebook ad that highlights the key benefits of my [service/product] in a compelling and convincing manner, and appeals to my [target audience].",
+            type: "copywriting",
+            id: "1",
+          },
+          {
+            id: "2",
+            prompt:
+              "Help me create a Facebook ad that addresses a common [pain point] in my industry and provides a solution that my [service/product] can offer to [target audience].",
+            type: "copywriting",
+          },
+          {
+            id: "3",
+            prompt: `Best of all, it frees up your time so you can focus on what you do best... so it’s perfect for course creators, coaches, consultants, authors, agencies and ANY business that needs to sell more online.
+  
+            And for a limited time only you can grab EVERYTHING you see on this page for the low, low price of just $67.00  $5.60`,
+            type: "copywriting",
+          },
+        ],
       },
       {
-        id: "2",
-        prompt:
-          "Help me create a Facebook ad that addresses a common [pain point] in my industry and provides a solution that my [service/product] can offer to [target audience].",
-        type: "copywriting",
+        pid: "sub2",
+        subTitle: ` Prompts For Creating Product Comparison Tables`,
+        subData: [
+          {
+            prompt:
+              "Assist me in crafting a Facebook ad that highlights the key benefits of my [service/product] in a compelling and convincing manner, and appeals to my [target audience].",
+            type: "copywriting",
+            id: "4",
+          },
+          {
+            id: "5",
+            prompt:
+              "Help me create a Facebook ad that addresses a common [pain point] in my industry and provides a solution that my [service/product] can offer to [target audience].",
+            type: "copywriting",
+          },
+          {
+            id: "6",
+            prompt: `Best of all, it frees up your time so you can focus on what you do best... so it’s perfect for course creators, coaches, consultants, authors, agencies and ANY business that needs to sell more online.
+  
+            And for a limited time only you can grab EVERYTHING you see on this page for the low, low price of just $67.00  $5.60`,
+            type: "copywriting",
+          },
+        ],
       },
     ],
   },
@@ -284,16 +847,54 @@ const bulkData = {
     image: localImage,
     promptdata: [
       {
-        prompt:
-          "Assist me in crafting a Facebook ad that highlights the key benefits of my [service/product] in a compelling and convincing manner, and appeals to my [target audience].",
-        type: "copywriting",
-        id: "1",
+        pid: "sub1",
+        subTitle: ` Prompts For Creating Product Comparison Tables`,
+        subData: [
+          {
+            prompt:
+              "Assist me in crafting a Facebook ad that highlights the key benefits of my [service/product] in a compelling and convincing manner, and appeals to my [target audience].",
+            type: "copywriting",
+            id: "1",
+          },
+          {
+            id: "2",
+            prompt:
+              "Help me create a Facebook ad that addresses a common [pain point] in my industry and provides a solution that my [service/product] can offer to [target audience].",
+            type: "copywriting",
+          },
+          {
+            id: "3",
+            prompt: `Best of all, it frees up your time so you can focus on what you do best... so it’s perfect for course creators, coaches, consultants, authors, agencies and ANY business that needs to sell more online.
+  
+            And for a limited time only you can grab EVERYTHING you see on this page for the low, low price of just $67.00  $5.60`,
+            type: "copywriting",
+          },
+        ],
       },
       {
-        id: "2",
-        prompt:
-          "Help me create a Facebook ad that addresses a common [pain point] in my industry and provides a solution that my [service/product] can offer to [target audience].",
-        type: "copywriting",
+        pid: "sub2",
+        subTitle: ` Prompts For Creating Product Comparison Tables`,
+        subData: [
+          {
+            prompt:
+              "Assist me in crafting a Facebook ad that highlights the key benefits of my [service/product] in a compelling and convincing manner, and appeals to my [target audience].",
+            type: "copywriting",
+            id: "4",
+          },
+          {
+            id: "5",
+            prompt:
+              "Help me create a Facebook ad that addresses a common [pain point] in my industry and provides a solution that my [service/product] can offer to [target audience].",
+            type: "copywriting",
+          },
+          {
+            id: "6",
+            prompt: `Best of all, it frees up your time so you can focus on what you do best... so it’s perfect for course creators, coaches, consultants, authors, agencies and ANY business that needs to sell more online.
+  
+            And for a limited time only you can grab EVERYTHING you see on this page for the low, low price of just $67.00  $5.60`,
+            type: "copywriting",
+          },
+        ],
       },
     ],
   },
@@ -302,16 +903,54 @@ const bulkData = {
     image: localImage,
     promptdata: [
       {
-        prompt:
-          "Assist me in crafting a Facebook ad that highlights the key benefits of my [service/product] in a compelling and convincing manner, and appeals to my [target audience].",
-        type: "copywriting",
-        id: "1",
+        pid: "sub1",
+        subTitle: ` Prompts For Creating Product Comparison Tables`,
+        subData: [
+          {
+            prompt:
+              "Assist me in crafting a Facebook ad that highlights the key benefits of my [service/product] in a compelling and convincing manner, and appeals to my [target audience].",
+            type: "copywriting",
+            id: "1",
+          },
+          {
+            id: "2",
+            prompt:
+              "Help me create a Facebook ad that addresses a common [pain point] in my industry and provides a solution that my [service/product] can offer to [target audience].",
+            type: "copywriting",
+          },
+          {
+            id: "3",
+            prompt: `Best of all, it frees up your time so you can focus on what you do best... so it’s perfect for course creators, coaches, consultants, authors, agencies and ANY business that needs to sell more online.
+  
+            And for a limited time only you can grab EVERYTHING you see on this page for the low, low price of just $67.00  $5.60`,
+            type: "copywriting",
+          },
+        ],
       },
       {
-        id: "2",
-        prompt:
-          "Help me create a Facebook ad that addresses a common [pain point] in my industry and provides a solution that my [service/product] can offer to [target audience].",
-        type: "copywriting",
+        pid: "sub2",
+        subTitle: ` Prompts For Creating Product Comparison Tables`,
+        subData: [
+          {
+            prompt:
+              "Assist me in crafting a Facebook ad that highlights the key benefits of my [service/product] in a compelling and convincing manner, and appeals to my [target audience].",
+            type: "copywriting",
+            id: "4",
+          },
+          {
+            id: "5",
+            prompt:
+              "Help me create a Facebook ad that addresses a common [pain point] in my industry and provides a solution that my [service/product] can offer to [target audience].",
+            type: "copywriting",
+          },
+          {
+            id: "6",
+            prompt: `Best of all, it frees up your time so you can focus on what you do best... so it’s perfect for course creators, coaches, consultants, authors, agencies and ANY business that needs to sell more online.
+  
+            And for a limited time only you can grab EVERYTHING you see on this page for the low, low price of just $67.00  $5.60`,
+            type: "copywriting",
+          },
+        ],
       },
     ],
   },
@@ -320,16 +959,54 @@ const bulkData = {
     image: localImage,
     promptdata: [
       {
-        prompt:
-          "Assist me in crafting a Facebook ad that highlights the key benefits of my [service/product] in a compelling and convincing manner, and appeals to my [target audience].",
-        type: "copywriting",
-        id: "1",
+        pid: "sub1",
+        subTitle: ` Prompts For Creating Product Comparison Tables`,
+        subData: [
+          {
+            prompt:
+              "Assist me in crafting a Facebook ad that highlights the key benefits of my [service/product] in a compelling and convincing manner, and appeals to my [target audience].",
+            type: "copywriting",
+            id: "1",
+          },
+          {
+            id: "2",
+            prompt:
+              "Help me create a Facebook ad that addresses a common [pain point] in my industry and provides a solution that my [service/product] can offer to [target audience].",
+            type: "copywriting",
+          },
+          {
+            id: "3",
+            prompt: `Best of all, it frees up your time so you can focus on what you do best... so it’s perfect for course creators, coaches, consultants, authors, agencies and ANY business that needs to sell more online.
+  
+            And for a limited time only you can grab EVERYTHING you see on this page for the low, low price of just $67.00  $5.60`,
+            type: "copywriting",
+          },
+        ],
       },
       {
-        id: "2",
-        prompt:
-          "Help me create a Facebook ad that addresses a common [pain point] in my industry and provides a solution that my [service/product] can offer to [target audience].",
-        type: "copywriting",
+        pid: "sub2",
+        subTitle: ` Prompts For Creating Product Comparison Tables`,
+        subData: [
+          {
+            prompt:
+              "Assist me in crafting a Facebook ad that highlights the key benefits of my [service/product] in a compelling and convincing manner, and appeals to my [target audience].",
+            type: "copywriting",
+            id: "4",
+          },
+          {
+            id: "5",
+            prompt:
+              "Help me create a Facebook ad that addresses a common [pain point] in my industry and provides a solution that my [service/product] can offer to [target audience].",
+            type: "copywriting",
+          },
+          {
+            id: "6",
+            prompt: `Best of all, it frees up your time so you can focus on what you do best... so it’s perfect for course creators, coaches, consultants, authors, agencies and ANY business that needs to sell more online.
+  
+            And for a limited time only you can grab EVERYTHING you see on this page for the low, low price of just $67.00  $5.60`,
+            type: "copywriting",
+          },
+        ],
       },
     ],
   },

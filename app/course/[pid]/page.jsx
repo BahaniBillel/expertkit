@@ -7,49 +7,62 @@ import LocalDB from "../../lib/bulkData";
 import DetailComp from "../../../components/DetailComp";
 
 const DynamicRoute = ({ params }) => {
-  const [content, setContent] = useState([]);
-  const [emoji, setEmoji] = useState("");
+  const [data, setData] = useState(null);
   const [key, setKey] = useState("");
 
   useEffect(() => {
     const categoryTransformed = decodeURIComponent(params.pid)
       .replace(/-/g, "_")
       .toLowerCase();
+
     const matchedKey = Object.keys(LocalDB).find(
       (key) => key.toLowerCase() === categoryTransformed
     );
 
     if (matchedKey) {
-      const { promptdata, emoji } = LocalDB[matchedKey];
-      setContent(promptdata);
-      setEmoji(emoji);
+      const newData = LocalDB[matchedKey];
+      setData(newData);
       setKey(
         matchedKey
           .replace(/_/g, " ")
           .replace(/(^|\s)\S/g, (l) => l.toUpperCase())
       );
     } else {
-      setContent([]);
-      setEmoji("");
+      setData(null);
     }
   }, [params.pid]);
 
   return (
     <div className="w-full relative">
-      <DetailComp emoji={emoji} title={key} />
-      <TransitionGroup className="flex flex-col  items-center px-10">
-        {content.length > 0 ? (
-          content.map((item) => (
-            <CSSTransition key={item.id} timeout={500} classNames="item">
-              <Prompt text={item.prompt} />
-            </CSSTransition>
-          ))
-        ) : (
-          <CSSTransition timeout={500} classNames="item">
-            <p>No content found for this category.</p>
-          </CSSTransition>
-        )}
-      </TransitionGroup>
+      {data ? (
+        <>
+          <DetailComp emoji={data.emoji} title={key} image={data.image} />
+          <TransitionGroup className="flex flex-col items-center px-10">
+            {data.promptdata.map((promptItem) => (
+              <CSSTransition
+                key={promptItem.pid}
+                timeout={500}
+                classNames="item"
+              >
+                <div>
+                  <h2>{promptItem.subTitle}</h2>
+                  {promptItem.subData.map((subItem) => (
+                    <Prompt
+                      key={subItem.id}
+                      text={subItem.prompt}
+                      type={subItem.type}
+                    />
+                  ))}
+                </div>
+              </CSSTransition>
+            ))}
+          </TransitionGroup>
+        </>
+      ) : (
+        <CSSTransition timeout={500} classNames="item">
+          <p>No content found for this category.</p>
+        </CSSTransition>
+      )}
     </div>
   );
 };

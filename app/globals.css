@@ -4,18 +4,32 @@
 
 
 /* REACT TRANSITION GROUP */
-.item-enter {
-    opacity: 0.01;
-  }
-  .item-enter-active {
-    opacity: 1;
-    transition: opacity 500ms ease-in;
-  }
-  .item-exit {
-    opacity: 1;
-  }
-  .item-exit-active {
-    opacity: 0.01;
-    transition: opacity 500ms ease-in;
-  }
+
   
+
+/* Define initial state for entering items */
+.item-enter {
+  opacity: 0;
+  transform: scale(0.95);
+}
+
+/* Define the state for items that have entered */
+.item-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 500ms ease-in, transform 500ms ease-in;
+}
+
+/* Initial state for exiting items */
+.item-exit {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* State for items that are exiting */
+.item-exit-active {
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 500ms ease-in, transform 500ms ease-in;
+}
+
