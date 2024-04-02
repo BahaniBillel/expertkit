@@ -37,7 +37,7 @@ const DynamicRoute = ({ params }) => {
       {data ? (
         <>
           <DetailComp emoji={data.emoji} title={key} image={data.image} />
-          <TransitionGroup className="flex flex-col items-center px-10">
+          <TransitionGroup className="flex flex-col items-center px-10 my-16">
             {data.promptdata.map((promptItem) => (
               <CSSTransition
                 key={promptItem.pid}
@@ -45,7 +45,9 @@ const DynamicRoute = ({ params }) => {
                 classNames="item"
               >
                 <div>
-                  <h2>{promptItem.subTitle}</h2>
+                  <h2 className="text-2xl font-semibold ">
+                    {promptItem.subTitle}
+                  </h2>
                   {promptItem.subData.map((subItem) => (
                     <Prompt
                       key={subItem.id}

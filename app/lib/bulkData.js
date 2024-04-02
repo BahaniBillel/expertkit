@@ -8,11 +8,41 @@ const bulkData = {
     promptdata: [
       {
         pid: "sub1",
-        subTitle: ` Prompts For Creating Product Comparison Tables`,
+        subTitle: `Doual`,
         subData: [
           {
-            prompt:
-              "Assist me in crafting a Facebook ad that highlights the key benefits of my [service/product] in a compelling and convincing manner, and appeals to my [target audience].",
+            prompt: `Instructions:
+           Replace the [place holder text] with your own
+           
+           Here's the prompt to use...
+           
+           Write a selection of 10 headlines based on the following topic and headline formulas:
+           Topic: [eg Losing Weight]
+           Desired Outcome: [Eg Losing 10 pounds in 30 days]
+           Headline Formula: [Number] Ways to [Achieve Desired Outcome]
+           With each headline provided, please include a short sentiment analysis to help me choose the best headline for my audience, use markdown formatting.
+           
+           
+           Additional headline formulas you can use in the prompt above:
+           
+           How to [Achieve Desired Outcome]
+           [Number] Ways to [Achieve Desired Outcome]
+           [Number] Secrets to [Achieve Desired Outcome]
+           [Number] [Adjective] Ways to [Achieve Desired Outcome]
+           [Question] [Promise of Solution]
+           [Number] Common [Noun] Mistakes You Should Avoid
+           [Number] Surprising Facts About [Topic]
+           [Number] Reasons Why [Something] Is [Desirable/Undesirable]
+           The Ultimate Guide to [Topic]: [Number] Steps to [Achieve Desired Outcome]
+           [Number] [Adjective] Tips to [Achieve Desired Outcome] Like a Pro
+           
+           
+           Additional Refinements:
+           
+           Once you have a headline you'd like to use... copy it and paste it into the chat window as a new prompt, then add the following text to your new prompt (remember to update the placeholder text)
+           
+           "Rewrite and expand on the above headline so that it better targets [busy moms], don't simply add the target group's name to the original headline, instead re-engineer the words of the headline so 
+           it resonates deeply with this prospect type, include 3 examples and again for each headline include a short sentiment analysis, use markdown formatting."`,
             type: "copywriting",
             id: "1",
           },
@@ -1094,3 +1124,53 @@ export default bulkData;
 // 👥 Prompts pour la gestion des employés
 
 // Cela répond-il à votre demande ?
+// 🌟 Personal Branding
+// 📰 Public Relations (PR)
+// 🎉 Event Marketing
+// 🖥️ User Experience (UX) Optimization
+// 🗣️ Voice Search Optimization
+// 🕶️ Augmented Reality (AR) Marketing
+// 🎙️ Podcasting
+// ♻️ Sustainability and Social Responsibility Marketing
+// 🌍 International Marketing
+// 🔍 Niche Marketing
+// 🎬 Video Marketing Beyond YouTube and TikTok
+// 📻 Podcast Advertising
+// 🎮 Gamification
+// 💬 Chatbots and AI for Personalized Marketing
+// 📊 Data Analytics and Insights
+// 🛍️ Omnichannel Marketing
+// 🤖 Machine Learning in Marketing
+// 🚀 Growth Hacking
+// 🧠 Neuromarketing
+// 🌐 Geo-Marketing
+// 📆 Seasonal Marketing
+// 🤑 Revenue Optimization
+// 🎨 Creative Storytelling
+// 📑 Content Curation
+// 📲 Mobile Marketing
+// 🕵️‍♂️ Competitive Analysis
+// 🏆 Loyalty Programs
+// 🌱 Organic Growth Strategies
+// 🤲 Community Building
+// 🚧 Crisis Management
+// 🛡️ Brand Protection
+// 🎤 Influencer Partnerships
+// 🔄 Retargeting Strategies
+// 🤹‍♂️ Multi-Channel Campaigns
+// 🌟 Experiential Marketing
+// 📝 Technical SEO
+// 💼 B2B Marketing Strategies
+// 🎉 Launch Strategies
+// 🧐 Customer Insight Mining
+// 🏢 Corporate Branding
+// 🔗 Link Building Strategies
+// 📈 Advanced Analytics
+// 🤖 Automation Tools
+// 💡 Ideation and Brainstorming
+// 🛍️ Shopping Experience Enhancement
+// 🚀 Viral Marketing Tactics
+// 📚 Educational Marketing
+// 🕵️ Privacy and Data Protection
+// 🧳 Travel and Tourism Marketing
+// 🎵 Music and Entertainment Marketing

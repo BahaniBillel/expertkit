@@ -8,28 +8,24 @@
   
 
 /* Define initial state for entering items */
-.item-enter {
+.fade-enter {
   opacity: 0;
-  transform: scale(0.95);
 }
 
-/* Define the state for items that have entered */
-.item-enter-active {
+.fade-enter-active {
   opacity: 1;
-  transform: scale(1);
-  transition: opacity 500ms ease-in, transform 500ms ease-in;
+  transition: opacity 500ms ease-in;
 }
 
-/* Initial state for exiting items */
-.item-exit {
+.fade-exit {
   opacity: 1;
-  transform: scale(1);
 }
 
-/* State for items that are exiting */
-.item-exit-active {
+.fade-exit-active {
   opacity: 0;
-  transform: scale(0.95);
-  transition: opacity 500ms ease-in, transform 500ms ease-in;
+  transition: opacity 500ms ease-in;
 }
 
+html {
+  scroll-behavior: smooth;
+}
