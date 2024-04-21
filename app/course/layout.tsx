@@ -25,7 +25,7 @@ export default function Layout({ children }) {
   };
 
   return (
-    <div className="flex h-screen  container">
+    <div className="flex h-screen  ">
       {/* Sidebar container */}
 
       {!findPathname ? null : (

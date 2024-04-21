@@ -50,19 +50,19 @@ const CustomerService = () => {
       <div className="px-5">
         {/* Navigation links for each div */}
         <div
-          className="my-10 mx-auto w-full grid grid-flow-row   max-w-xl md:max-w-3xl lg:max-w-4xl
-      overflow-hidden border border-gray-200 rounded-md "
+          className="my-10 mx-auto w-full grid grid-flow-row   max-w-xl md:max-w-3xl lg:max-w-5xl
+      overflow-hidden border border-gray-200 rounded-md  "
         >
-          <div className="row-span-1 bg-gray-300  p-2">
+          <div className="row-span-1 bg-amber-300  p-2">
             <h1 className="text-stone-900 md:text-2xl font-semibold px-3">
               Liens Rapides des prompts pour..
             </h1>
           </div>
-          <div className=" row-span-8  flex flex-row flex-wrap max-h-min gap-4 p-4 bg-amber-50">
+          <div className=" row-span-8  flex flex-col md:flex-wrap md:max-h-80 gap-4 p-4 bg-white md:text-lg">
             <button
               onClick={() => scrollToDiv(divRef1)}
               className="px-2 py-4 flex flex-row whitespace-pre items-center h-5
-             max-h-min  hover:underline  text-stone-900 rounded md:text-xl font-light"
+             max-h-min  hover:underline  text-stone-900 rounded  font-light"
             >
               <PiCaretCircleRightLight className="mr-2 bg-black rounded-full text-white" />
               l&apos;appui général Messages électroniques.
@@ -70,7 +70,7 @@ const CustomerService = () => {
             <button
               onClick={() => scrollToDiv(divRef2)}
               className="px-2 py-4 flex flex-row whitespace-pre items-center h-5
-             max-h-min  hover:underline  text-stone-900 rounded md:text-xl font-light"
+             max-h-min  hover:underline  text-stone-900 rounded font-light"
             >
               <PiCaretCircleRightLight className="mr-2 bg-black rounded-full text-white" />
               rédiger des e-mails de confirmation de commande.
@@ -78,7 +78,7 @@ const CustomerService = () => {
             <button
               onClick={() => scrollToDiv(divRef3)}
               className="px-2 py-4 flex flex-row whitespace-pre items-center h-5
-             max-h-min  hover:underline  text-stone-900 rounded md:text-xl font-light"
+             max-h-min  hover:underline  text-stone-900 rounded  font-light"
             >
               <PiCaretCircleRightLight className="mr-2 bg-black rounded-full text-white" />
               Confirmation d&apos;expédition Modèles de courriel.
@@ -86,7 +86,7 @@ const CustomerService = () => {
             <button
               onClick={() => scrollToDiv(divRef4)}
               className="px-2 py-4 flex flex-row whitespace-pre items-center h-5
-             max-h-min  hover:underline  text-stone-900 rounded md:text-xl font-light"
+             max-h-min  hover:underline  text-stone-900 rounded  font-light"
             >
               <PiCaretCircleRightLight className="mr-2 bg-black rounded-full text-white" />
               L&apos;écriture de retour & échange de courriels
@@ -94,7 +94,7 @@ const CustomerService = () => {
             <button
               onClick={() => scrollToDiv(divRef5)}
               className="px-2 py-4 flex flex-row whitespace-pre items-center h-5
-             max-h-min  hover:underline  text-stone-900 rounded md:text-xl font-light"
+             max-h-min  hover:underline  text-stone-900 rounded  font-light"
             >
               <PiCaretCircleRightLight className="mr-2 bg-black rounded-full text-white" />
               le remboursement Messages électroniques.
@@ -102,7 +102,7 @@ const CustomerService = () => {
             <button
               onClick={() => scrollToDiv(divRef6)}
               className="px-2 py-4 flex flex-row whitespace-pre items-center h-5
-             max-h-min  hover:underline  text-stone-900 rounded md:text-xl font-light"
+             max-h-min  hover:underline  text-stone-900 rounded  font-light"
             >
               <PiCaretCircleRightLight className="mr-2 bg-black rounded-full text-white" />
               les e-mails d&apos;assistance technique.
@@ -110,7 +110,7 @@ const CustomerService = () => {
             <button
               onClick={() => scrollToDiv(divRef7)}
               className="px-2 py-4 flex flex-row whitespace-pre items-center h-5
-             max-h-min  hover:underline  text-stone-900 rounded md:text-xl font-light"
+             max-h-min  hover:underline  text-stone-900 rounded  font-light"
             >
               <PiCaretCircleRightLight className="mr-2 bg-black rounded-full text-white" />
               la gestion des comptes Messages électroniques.
@@ -118,7 +118,7 @@ const CustomerService = () => {
             <button
               onClick={() => scrollToDiv(divRef8)}
               className="px-2 py-4 flex flex-row whitespace-pre items-center h-5
-             max-h-min  hover:underline  text-stone-900 rounded md:text-xl font-light"
+             max-h-min  hover:underline  text-stone-900 rounded font-light"
             >
               <PiCaretCircleRightLight className="mr-2 bg-black rounded-full text-white" />
               les e-mails d&apos;enquête de produit.
@@ -126,7 +126,7 @@ const CustomerService = () => {
             <button
               onClick={() => scrollToDiv(divRef9)}
               className="px-2 py-4 flex flex-row whitespace-pre items-center h-5
-             max-h-min  hover:underline  text-stone-900 rounded md:text-xl font-light"
+             max-h-min  hover:underline  text-stone-900 rounded  font-light"
             >
               <PiCaretCircleRightLight className="mr-2 bg-black rounded-full text-white" />
               les e-mails d&apos;enquête de ventes.
