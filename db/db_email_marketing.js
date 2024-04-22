@@ -1,4 +1,4 @@
-export default function fetchYourGroupsData() {
+export default function EmailMarkeyingData() {
   return [
     {
       groupId: 1,

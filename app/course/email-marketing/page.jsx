@@ -4,7 +4,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import { LiaCopySolid } from "react-icons/lia";
 import DetailComp from "../../../components/DetailComp";
-import fetchYourGroupsData from "../../../db/email_marketing";
+import EmailMarkeyingData from "../../../db/db_email_marketing";
 
 const EmailMarketing = () => {
   const [copied, setCopied] = useState(false);
@@ -15,7 +15,7 @@ const EmailMarketing = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const data = await fetchYourGroupsData();
+      const data = await EmailMarkeyingData();
       setGroups(data);
       // Initialize refs for each group after data is fetched
       data.forEach((group) => {
@@ -87,13 +87,13 @@ const EmailMarketing = () => {
 
         {groups.map((group) => (
           <div key={group.groupId}>
-            <h1
-              ref={sectionRefs.current[group.groupId]}
-              className="md:text-xl font-semibold text-gray-900 mt-5"
-            >
-              {group.groupName}
-            </h1>
             <TransitionGroup className="grid grid-flow-row justify-center">
+              <h1
+                ref={sectionRefs.current[group.groupId]}
+                className="md:text-xl font-semibold text-gray-900 mt-5 "
+              >
+                {group.groupName}
+              </h1>
               {group.items.map((item) => (
                 <CSSTransition key={item.id} timeout={500} classNames="fade">
                   <div
@@ -126,13 +126,13 @@ const EmailMarketing = () => {
                   </div>
                 </CSSTransition>
               ))}
+              <button
+                className="mt-4 mb-5 px-4 py-2 max-w-max rounded bg-black text-white font-bold hover:bg-amber-400"
+                onClick={scrollToNavigationLinks}
+              >
+                Back to Top
+              </button>
             </TransitionGroup>
-            <button
-              className="mt-4 mb-5 px-4 py-2 rounded bg-blue-500 text-white font-bold hover:bg-blue-600"
-              onClick={scrollToNavigationLinks}
-            >
-              Back to Top
-            </button>
           </div>
         ))}
       </div>
